@@ -127,16 +127,25 @@ padding: 24px 0;
 .link-link:focus {
     color:var(--hover-color);}
 
+.item-after {
+    position: relative;
+    color: #404bbf;
+}
 
 
  .item-after::after {
-    display: block;
-    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    /* display: block;
+    margin-top: 20px; */
     content: "";
     width: 100%;
     height: 4px;
     background-color: var(--hover-color);
-
+    border-radius: 2px; 
+    
     /* opacity: 0; */
 }  
 
